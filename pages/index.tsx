@@ -194,7 +194,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <a className="w-full" href="https://t.me/swagv">
-            <div className="fixed bottom-2 w-[min(90vw,686px)] bg-[rgb(26,26,26)] text-white text-center font-[500] py-2 rounded-[8px] text-[20px]">
+            <div className="fixed bottom-4 w-[min(90vw,686px)] bg-[rgb(26,26,26)] text-white text-center font-[500] py-2 rounded-[8px] text-[20px]">
               Написать мне
             </div>
           </a>
