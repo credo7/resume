@@ -25,7 +25,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className="flex items-start justify-center">
-        <div className="w-full sm:w-[686px] flex-col pb-[40px]">
+        <div className="w-full sm:w-[686px] flex-col pb-[80px]">
           <img
             className="mx-auto sm:mx-0 w-[250px] rounded-full"
             src="ava.jpeg"
@@ -96,19 +96,19 @@ const Home: NextPage = () => {
             </div>
             <div className="flex flex-row sm:ml-auto space-x-4">
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://www.youtube.com/watch?v=y___OOWVqzY"
               >
                 Demo
               </a>
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://credo7.github.io/my-feed/"
               >
                 Web
               </a>
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://github.com/credo7/my-feed"
               >
                 GitHub
@@ -137,19 +137,19 @@ const Home: NextPage = () => {
             </div>
             <div className="flex flex-row sm:ml-auto space-x-4">
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://youtu.be/k_7NmJMGW9E"
               >
                 Demo
               </a>
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="www.asicmine.ru:8080"
               >
                 Web
               </a>
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://github.com/bandrw/ft_transcendence"
               >
                 GitHub
@@ -177,21 +177,21 @@ const Home: NextPage = () => {
             </div>
             <div className="flex flex-row sm:ml-auto space-x-4">
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://www.youtube.com/watch?v=IUhhCpymxhs"
               >
                 Demo
               </a>
               <a
-                className="text-black border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-black hover:border-black"
+                className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
                 href="https://github.com/credo7/englishApp"
               >
                 GitHub
               </a>
             </div>
           </div>
-          <a href="https://t.me/swagv">
-            <div className="w-full mt-[32px] bg-black text-white text-center font-[500] py-2 rounded-[2px] text-[20px]">
+          <a className="w-full" href="https://t.me/swagv">
+            <div className="fixed bottom-2 w-[min(90vw,686px)] bg-[rgb(26,26,26)] text-white text-center font-[500] py-2 rounded-[8px] text-[20px]">
               Написать мне
             </div>
           </a>
