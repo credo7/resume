@@ -65,9 +65,12 @@ const Home: NextPage = () => {
           </div>
           <h2 className="mt-[20px] font-[700] text-[24px]">Навыки</h2>
           <div className="mt-[12px]">
-            {skills.map((skill) => {
+            {skills.map((skill, index) => {
               return (
-                <span className="bg-[#eee] rounded-[32px] py-1 px-3 inline-block m-[6px] ml-0">
+                <span
+                  key={index}
+                  className="bg-[#eee] rounded-[32px] py-1 px-3 inline-block m-[6px] ml-0"
+                >
                   {skill}
                 </span>
               );
