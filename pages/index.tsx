@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Vitaly</title>
         <meta name="description" content="Vitaly's resume" />
-        <script src="https://cdn.tailwindcss.com"/>
+        <script src="https://cdn.tailwindcss.com" />
       </Head>
 
       <main className="flex items-start justify-center">
@@ -191,6 +191,40 @@ const Home: NextPage = () => {
               >
                 GitHub
               </a>
+            </div>
+          </div>
+          <div className="mt-[20px] space-y-3">
+            <h2 className="font-[700] text-[24px]">Образование</h2>
+            <div className="font-[500] text-[24px]">School 21</div>
+            <div className="flex flex-col space-y-3">
+              <span className="inline-block">
+                Франшиза французской школы программирования "Ecole 42".
+              </span>
+              <span className="inline-block">
+                Опыт разработки интересных проектов
+              </span>
+              <span className="inline-block">Метод обучения peer-to-peer</span>
+              <span className="inline-block">Командные проекты</span>
+            </div>
+            <div className="font-[500] text-[24px]">ILAC Toronto</div>
+            <div className="flex flex-col space-y-3">
+              <span className="inline-block">
+                Интернациональная языковая академия
+              </span>
+              <span className="inline-block">
+                Написано более 8 research проектов
+              </span>
+              <span className="inline-block">IELTS от 6.5</span>
+              <span className="inline-block">
+                Сертификат о степени знания англйиского языка на Advanced
+                уровень
+              </span>
+              <span className="inline-block">Pathway 3.3</span>
+            </div>
+            <div className="font-[500] text-[24px]">КФУ</div>
+            <div className="flex flex-col space-y-3">
+              <span>Направление Business-IT</span>
+              <span>Заканчиваю 3 курс</span>
             </div>
           </div>
           <a className="w-full" href="https://t.me/swagv">
