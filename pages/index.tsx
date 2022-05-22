@@ -1,5 +1,9 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { useRouter } from "next/router";
+
+import en from "../locales/en";
+import ru from "../locales/ru";
 
 const skills = [
   "HTML / CSS / JS",
@@ -16,6 +20,10 @@ const skills = [
 ];
 
 const Home: NextPage = () => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "ru" ? ru : en;
+
   return (
     <div className="px-[24px]">
       <Head>
@@ -32,7 +40,7 @@ const Home: NextPage = () => {
           />
           <div className="flex flex-row space-x-4 mt-[20px] mb-[12px]">
             <h2 className="text-[24px] font-[700] text-[rgb(26,26,26)]">
-              Виталий Ахметзянов
+              {t.name}
             </h2>
             <a href="https://t.me/swagv">
               <img
@@ -48,22 +56,11 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div className="flex flex-col space-y-3 text-[rgb(26,26,26)]">
-            <span className="inline-block">
-              Cпециализируюсь во Frontend области, умею пользоваться GitHub,
-              писать чистый и понятный код, а также пунктуально и ответственно
-              его пушить
-            </span>
-            <span className="inline-block">
-              В данный момент изучаю новые технологии, совершенствую изученные
-              навыки и начинаю задумываться о трудоустройстве
-            </span>
-            <span className="inline-block">
-              Главный профессиональный интерес - это развитие, хотел бы получить
-              более глубокие знания и опыт работы с крупными проектами, а потом
-              применять их в команде
-            </span>
+            <span className="inline-block">{t.desc1}</span>
+            <span className="inline-block">{t.desc2}</span>
+            <span className="inline-block">{t.desc3}</span>
           </div>
-          <h2 className="mt-[20px] font-[700] text-[24px]">Навыки</h2>
+          <h2 className="mt-[20px] font-[700] text-[24px]">{t.skillsField}</h2>
           <div className="mt-[12px]">
             {skills.map((skill, index) => {
               return (
@@ -77,22 +74,16 @@ const Home: NextPage = () => {
             })}
           </div>
           <h2 className="mt-[20px] mb-[12px] text-[24px] font-[700] text-[rgb(26,26,26)]">
-            Мои проекты
+            {t.projectsField}
           </h2>
           <div className="flex flex-col space-y-3 mb-[20px]">
             <p className="font-[500] text-[24px] my-auto mr-auto min-w-[160px] text-left">
-              Feed
+              {t.firstProjectName}
             </p>
             <div className="flex flex-col space-y-3">
-              <p className="font-[500]">Роль - Fullstack Developer</p>
-              <span>
-                Цель проекта - реализовать аналог instagram в modern стиле c
-                динамическими данными.
-              </span>
-              <span>
-                Функционал: Подписки, лента, посты, лайки, комментарии к постам,
-                редактирование / просмотр / поиск профиля
-              </span>
+              <p className="font-[500]">{t.firstProjectRole}</p>
+              <span>{t.firstProjectDesc1}</span>
+              <span>{t.firstProjectDesc2}</span>
               <span>
                 Stack: NextJS, Recoil, TypeScript, Tailwind, Firebase Auth,
                 Database, storage, CI / CD, GitHub Pages
@@ -123,21 +114,12 @@ const Home: NextPage = () => {
             <p className="font-[500] text-[24px] my-auto mr-auto min-w-[160px] text-left">
               ft_transcendence
             </p>
-            <p className="font-[500]">
-              Веб-приложение · Игра в Пинг-Понг · TypeScript
-            </p>
-            <p className="font-[500]">Роль - Frontend Developer</p>
+            <p className="font-[500]">{t.secondProjectTags}</p>
+            <p className="font-[500]">{t.secondProjectRole}</p>
             <div className="flex flex-col space-y-3">
-              <span>
-                Участие в реализации проекта, с помощью которого пользователи
-                смогут играть в пинг-понг между собой в реальном времени.
-              </span>
-              <span>
-                В проекте реализован REST API, система авторизации с JWT
-                токенами, дополнительное общение с сервером через веб-сокеты, а
-                также все сервисы завернуты в docker контейнеры
-              </span>
-              <span>Командный проект от школы 21</span>
+              <span>{t.secondProjectDesc1}</span>
+              <span>{t.secondProjectDesc2}</span>
+              <span>{t.secondProjectDesc3}</span>
               <span>Stack: (React, NestJS, PostgreSQL, Docker)</span>
             </div>
             <div className="flex flex-row sm:ml-auto space-x-4">
@@ -165,17 +147,10 @@ const Home: NextPage = () => {
             <p className="font-[500] text-[24px] my-auto mr-auto min-w-[160px] text-left">
               Personal Dictionary
             </p>
-            <p className="font-[500]">Роль - Fullstack Developer</p>
+            <p className="font-[500]">{t.thirdProjectRole}</p>
             <div className="flex flex-col space-y-3">
-              <span>
-                Цель проекта - реализовать веб-приложение, с помощью которого
-                пользователи cмогут добавлять английские слова для дальнейшего
-                их изучения
-              </span>
-              <span>
-                В проекте реализован REST API, система авторизации с JWT
-                токенами, а также все сервисы завернуты в docker контейнеры.
-              </span>
+              <span>{t.thirdProjectDesc1}</span>
+              <span>{t.thirdProjectDesc2}</span>
               <span>
                 Stack: ReactJs, Redux, TypeScript, SCSS, REST API NestJS, JWT
                 Auth, Postgres, TypeORM, Docker
@@ -197,42 +172,31 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="mt-[20px] space-y-3">
-            <h2 className="font-[700] text-[24px]">Образование</h2>
+            <h2 className="font-[700] text-[24px]">{t.educationField}</h2>
             <div className="font-[500] text-[24px]">School 21</div>
             <div className="flex flex-col space-y-3">
-              <span className="inline-block">
-                Франшиза французской школы программирования "Ecole 42".
-              </span>
-              <span className="inline-block">
-                Опыт разработки интересных проектов
-              </span>
-              <span className="inline-block">Метод обучения peer-to-peer</span>
-              <span className="inline-block">Командные проекты</span>
+              <span className="inline-block">{t.schoolDesc1}</span>
+              <span className="inline-block">{t.schoolDesc2}</span>
+              <span className="inline-block">{t.schoolDesc3}</span>
+              <span className="inline-block">{t.schoolDesc4}</span>
             </div>
             <div className="font-[500] text-[24px]">ILAC Toronto</div>
             <div className="flex flex-col space-y-3">
-              <span className="inline-block">
-                Интернациональная языковая академия
-              </span>
-              <span className="inline-block">
-                Написано более 8 research проектов
-              </span>
-              <span className="inline-block">IELTS от 6.5</span>
-              <span className="inline-block">
-                Сертификат о степени знания англйиского языка на Advanced
-                уровень
-              </span>
-              <span className="inline-block">Pathway 3.3</span>
+              <span className="inline-block">{t.ilacDesc1}</span>
+              <span className="inline-block">{t.ilacDesc2}</span>
+              <span className="inline-block">{t.ilacDesc3}</span>
+              <span className="inline-block">{t.ilacDesc4}</span>
+              <span className="inline-block">{t.ilacDesc5}</span>
             </div>
-            <div className="font-[500] text-[24px]">КФУ</div>
+            <div className="font-[500] text-[24px]">{t.kfuField}</div>
             <div className="flex flex-col space-y-3">
-              <span>Направление Business-IT</span>
-              <span>Заканчиваю 3 курс</span>
+              <span>{t.kfuDirection}</span>
+              <span>{t.kfuCourse}</span>
             </div>
           </div>
           <a className="w-full" href="https://t.me/swagv">
             <div className="fixed bottom-4 w-[min(90vw,686px)] bg-[rgb(26,26,26)] text-white text-center font-[500] py-2 rounded-[8px] text-[20px]">
-              Написать мне
+              {t.writeMe}
             </div>
           </a>
         </div>
