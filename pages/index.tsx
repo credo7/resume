@@ -84,6 +84,7 @@ const Home: NextPage = () => {
               Feed
             </p>
             <div className="flex flex-col space-y-3">
+              <p className="font-[500]">Роль - Fullstack Developer</p>
               <span>
                 Цель проекта - реализовать аналог instagram в modern стиле c
                 динамическими данными.
@@ -125,6 +126,7 @@ const Home: NextPage = () => {
             <p className="font-[500]">
               Веб-приложение · Игра в Пинг-Понг · TypeScript
             </p>
+            <p className="font-[500]">Роль - Frontend Developer</p>
             <div className="flex flex-col space-y-3">
               <span>
                 Участие в реализации проекта, с помощью которого пользователи
@@ -163,6 +165,7 @@ const Home: NextPage = () => {
             <p className="font-[500] text-[24px] my-auto mr-auto min-w-[160px] text-left">
               Personal Dictionary
             </p>
+            <p className="font-[500]">Роль - Fullstack Developer</p>
             <div className="flex flex-col space-y-3">
               <span>
                 Цель проекта - реализовать веб-приложение, с помощью которого
