@@ -147,7 +147,7 @@ const Home: NextPage = () => {
               </a>
               <a
                 className="text-[rgb(26,26,26)] border-[1px] border-gray-400 px-4 py-1 rounded-[32px] hover:scale-[115%] duration-300 hover:text-white hover:bg-[rgb(26,26,26)] hover:border-[rgb(26,26,26)]"
-                href="www.asicmine.ru:8080"
+                href="http://www.asicmine.ru:8080/"
               >
                 Web
               </a>
