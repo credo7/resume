@@ -1,6 +1,6 @@
 export default {
   name: "Vitaly Akhmetzianov",
-  desc1: `I specialize in Frontend area, I know how to use GitHub,
+  desc1: `I specialize in Frontend and Backend areas, I know how to use GitHub,
     write clean and understandable code, as well as punctually and responsibly
     push him`,
   desc2: `At the moment I am studying new technologies, improving the studied
